@@ -14,7 +14,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <FoodBox />
+      {
+        this.state.data.map((data,index) => <FoodBox {...data} key={index}/>)
+      }
       </div>
     );
   }
