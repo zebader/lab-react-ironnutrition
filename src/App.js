@@ -32,10 +32,10 @@ class App extends Component {
   }
 
   addFoodHandler = (newFood) => {
-    const foodCopy = [...this.state.data];
+    const foodCopy = [...this.state.allFood];
     foodCopy.push(newFood);
     
-    this.setState({ data: foodCopy })
+    this.setState({ allFood: foodCopy, data:foodCopy })
   }
 
   render() {
