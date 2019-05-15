@@ -26,7 +26,10 @@
 .box{
   width: 100%;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 5% auto;
+}
+.button{
+  margin: 5%;
 }
 
 @keyframes App-logo-spin {
