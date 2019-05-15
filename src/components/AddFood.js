@@ -40,8 +40,9 @@ class AddFood extends Component {
       {this.state.display ? "Hide" : "Add Food"}
       </button>
 
-      {this.state.display ? (
-        <form onSubmit={this.handleFormSubmit} style={this.display}>
+      {
+        this.state.display ? 
+        (<form onSubmit={this.handleFormSubmit} style={this.display}>
             <label>Name:</label>
             <input className="input is-medium" name="name" type="text" value={this.state.name} onChange={(e) => this.handleChange(e)} />
 
@@ -52,7 +53,8 @@ class AddFood extends Component {
             <input  className="input is-medium" name="calories" type="number" value={this.state.calories} onChange={(e) => this.handleChange(e)} />
             
             <button className="button is-success is-large" type="submit" > Submit </button>
-        </form>) : null}
+        </form>) 
+        : null}
       </div>
     )
   }
